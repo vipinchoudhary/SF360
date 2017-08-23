@@ -1,0 +1,5 @@
+c:\users\vimal\onedrive\documents\visual studio 2015\Projects\Safefood360Interview\Entities\bin\Debug\Entities.dll
+c:\users\vimal\onedrive\documents\visual studio 2015\Projects\Safefood360Interview\Entities\bin\Debug\Entities.pdb
+c:\users\vimal\onedrive\documents\visual studio 2015\Projects\Safefood360Interview\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+c:\users\vimal\onedrive\documents\visual studio 2015\Projects\Safefood360Interview\Entities\obj\Debug\Entities.dll
+c:\users\vimal\onedrive\documents\visual studio 2015\Projects\Safefood360Interview\Entities\obj\Debug\Entities.pdb
