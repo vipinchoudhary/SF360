@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model IEnumerable<Entities.Company>
+<table class="table table-striped">
+    <thead>
+    <th>
+        Name
+    </th>
+    <th>
+        Person Name
+    </th>
+    <th>
+        Employement Start Date
+    </th>
+    <th>
+        Employement End Date
+    </th>
+    <th>
+        NumberOfYearsEmployed
+    </th>
+    </thead>
+    <tbody>
+
+
+    @foreach (var item in Model)
+    {
+        if (item.Employments?.Count > 0)
+        {
+            foreach (var empitem in item.Employments)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => empitem.Employee.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => empitem.EmployementStartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => empitem.EmployementStartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => empitem.NumberOfYearsEmployed)
+                    </td>
+
+
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+
+
+            </tr>
+
+        }
+    }
+        </tbody>
+    <tfoot>
+    <tr>
+        <td>
+            <b>Total Count</b>
+        </td>
+        <td>
+          <b>  @Model.Count()</b>
+        </td>
+        <td>
+            @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { id = "submitForm" }))
+            {
+                              
+                    <input type="submit" id="btnSave" value="Find Irish" />
+              
+            }
+        </td>
+    </tr>
+        </tfoot>
+</table>

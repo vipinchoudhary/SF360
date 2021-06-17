@@ -1,0 +1,9 @@
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\obj\Debug\Data.dll
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\obj\Debug\Data.pdb
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\bin\Debug\Data.dll
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\bin\Debug\Data.pdb
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\bin\Debug\Entities.dll
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\bin\Debug\Entities.pdb
+C:\Users\VIPIN\Downloads\Safefood360Interview\Safefood360Interview\Safefood360Interview\Data\obj\Debug\DAL.csproj.CopyComplete

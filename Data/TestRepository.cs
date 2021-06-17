@@ -30,7 +30,34 @@ namespace Data
 
         public List<Company> FindAllCompanies()
         {
-            return null;
+            List<Company> objCompany = new List<Company>();
+            foreach(IrishCompany irishCompany in IrishCompanies)
+            {
+                Company objCom = new Company();
+                objCom.Name = irishCompany.Name;
+                objCom.Type = irishCompany.GetType().ToString();
+                objCom.Employments = irishCompany.Employments;
+                objCompany.Add(objCom);
+            }
+            foreach (ForeignCompany foreignCompany in ForeignCompanies)
+            {
+                Company objCom = new Company();
+                objCom.Name = foreignCompany.Name;
+                objCom.Type = foreignCompany.GetType().ToString();
+                objCom.Employments = foreignCompany.Employments;
+                objCompany.Add(objCom);
+            }
+            foreach (SoleTrader soleTrader in SoleTraders)
+            {
+                Company objCom = new Company();
+                objCom.Name = soleTrader.Name;
+                objCom.Type = soleTrader.GetType().ToString();
+                objCom.Employments = soleTrader.Employments;
+                objCompany.Add(objCom);
+            }
+
+
+            return objCompany;
         }
 
         #region dummy data
@@ -42,8 +69,7 @@ namespace Data
                 Name = "Irish1",
                 AddressLine1 = "addr1",
                 AddressLine2 = "addr2",
-                AddressLine3 = "addr3"
-                ,
+                AddressLine3 = "addr3",
                 Employments = new List<Employment>
                 {
                     new Employment
