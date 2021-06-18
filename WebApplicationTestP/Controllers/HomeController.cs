@@ -15,7 +15,8 @@ namespace WebApplicationTestP.Controllers
             TestRepository testRepository = new TestRepository();
             if (String.IsNullOrEmpty(command))
             {
-                return View(testRepository.FindAllCompanies());
+                List<Company> companies = testRepository.FindAllCompanies();                
+                return View(companies);
             }
             else 
             {

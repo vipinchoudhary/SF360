@@ -13,7 +13,14 @@ namespace Entities
        
         public double NumberOfYearsEmployed
         {
-            get { return 0; }
+            get {
+                TimeSpan ts;
+                if (EmploymentEndDate != null)
+                 ts =  (DateTime)EmploymentEndDate - EmployementStartDate;
+                else
+                    ts =  DateTime.Today - EmployementStartDate;
+                return ts.TotalDays;
+                    }
         }
     }
 }
