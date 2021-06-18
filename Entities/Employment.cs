@@ -19,7 +19,10 @@ namespace Entities
                  ts =  (DateTime)EmploymentEndDate - EmployementStartDate;
                 else
                     ts =  DateTime.Today - EmployementStartDate;
-                return ts.TotalDays;
+                var totalDays = ts.TotalDays;
+                var totalYears = Math.Truncate(totalDays / 365);
+                var totalMonths = Math.Truncate((totalDays % 365) / 30);
+                return totalYears+totalMonths/10;
                     }
         }
     }
