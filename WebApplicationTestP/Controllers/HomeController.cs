@@ -22,8 +22,7 @@ namespace WebApplicationTestP.Controllers
             {
                 command = string.Empty;
                 List<Company> companies = new List<Company>();
-                companies = testRepository.FindAllCompanies();
-                companies =companies.Where(a => a.Type == "Entities.IrishCompany").ToList();
+                companies = testRepository.FindAllCompanies().Where(x => x.GetType().ToString().Contains("IrishCompany")).ToList();               
                 return View(companies); ;
             }
         }

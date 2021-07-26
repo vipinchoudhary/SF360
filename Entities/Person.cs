@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -8,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Person
+    public class Person 
     {
-        public string Name { get; set; }
-
+        public string Name { get; set; }       
+       
 
     }
 }

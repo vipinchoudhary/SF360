@@ -4,7 +4,7 @@ namespace Entities
 {
     /// <summary>
     /// </summary>
-    public class SoleTrader : ParentCompany
+    public class SoleTrader : Company
     {
               
     }

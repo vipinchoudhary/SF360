@@ -2,7 +2,7 @@
 
 namespace Entities
 {
-    public class ForeignCompany : ParentCompany
+    public class ForeignCompany : Company
     {
        
         public string InternationBusinessNumber { get; set; }
